@@ -25,7 +25,7 @@ export default async function Home() {
                 {tickets
                   .filter(ticket => ele === ticket.category)
                   .map((filteredTicket, index) => (
-                    <Card ticket={filteredTicket} id={index} index={index} />
+                    <Card ticket={filteredTicket} id={index} key={index} />
                   ))}
               </div>
             </div>
