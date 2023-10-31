@@ -2,7 +2,7 @@ import Form from "@/app/(components)/Form";
 
 const getTicketDetails = async id => {
   try {
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/tickets-api/${id}`, {
       cache: "no-store",
     });
 

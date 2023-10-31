@@ -2,7 +2,7 @@ import Card from "./(components)/Card";
 
 const getTickets = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/tickets-api`,
+    `${process.env.NEXT_PUBLIC_API_URL}/api/tickets-api`,
     {
       cache: "no-store",
     }
