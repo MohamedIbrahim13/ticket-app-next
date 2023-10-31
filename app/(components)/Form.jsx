@@ -29,7 +29,7 @@ export default function Form({ ticket }) {
   const handleSubmit = async e => {
     e.preventDefault();
     if (EditMode) {
-      const res = await fetch(`/api/Tickets/${ticket._id}`, {
+      const res = await fetch(`/api/tickets-api/${ticket._id}`, {
         method: "PUT",
         headers: {
           "ContentType": "application/json",
@@ -37,7 +37,7 @@ export default function Form({ ticket }) {
         body: JSON.stringify({ formData }),
       });
     } else {
-      const res = await fetch("/api/Tickets", {
+      const res = await fetch("/api/tickets-api", {
         method: "POST",
         body: JSON.stringify({ formData }),
         "Content-Type": "application/json",

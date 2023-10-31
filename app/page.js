@@ -1,7 +1,7 @@
 import Card from "./(components)/Card";
 
 const getTickets = async () => {
-  const res = await fetch("/api/Tickets", {
+  const res = await fetch("/api/tickets-api", {
     cache: "no-store",
   });
   if (!res.ok) {
