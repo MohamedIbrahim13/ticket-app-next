@@ -45,6 +45,9 @@ body {
   label {
     @apply mt-4
   }
+  a {
+    @apply underline font-bold;
+  }
   input,
   select,
   textarea {
